@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ahmed's Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <h1 class="brand">Ahmed Osman</h1>
+            <div class="toggle">
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html">About</a></li>
+            </ul>                  
+        </nav>
+        
+        <Section>
+            <h2>My Portfolio</h2>
+            <div class="myPort">
+                <!-- tried to build these divs to create an overlay box like in the assignment. Failed epically-->
+                
+                <!-- commenting this code out
+                <div class="container">
+                <div class="textOverlay">Adult Airport</div>
+                </div> -->
+
+                <!-- Portfolio images added and formated, but no overlay description boxes -->
+                <img src="assets/images/adult-airport.jpg" alt="Mobile Airport" class="pImages">
+                <img src="assets/images/nature-sunset.jpg" alt="Outdoors Sunset" class="pImages">
+                <img src="assets/images/photo-camera.jpg" alt="Photography School" class="pImages">
+                <img src="assets/images/soft-drink.jpg" alt="Soft Drinks" class="pImages">
+                <img src="assets/images/sports-drone.jpg" alt="Drone View" class="pImages">
+            </div>
+        </section>
+        
+        <footer>
+                <p id="footText">Copyright© Ahmed Osman</p>
+            </footer>
+    
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script type="text/JavaScript">
+                $(document).ready(function (){
+                    $('.menu').click(function(){
+                        $('ul').toggleClass('active');
+                    })
+                })
+            </script>
+        </body>
+    </html>

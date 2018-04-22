@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ahmed's Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <h1 class="brand">Ahmed Osman</h1>
+            <div class="toggle">
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>                  
+        </nav>
+
+
+       <section>
+            <h2>About me</h2>
+            <img src="assets/images/profile-pic.jpg" alt="Ahmed's Picture" title="Ahmed Osman">
+            <p>I am an aspiring Fullstack Developer with a background in Human Resources and Business Administration. My history with technology goes back to a time when floppy disks were the thing. As a child, I used to build, and erm… destroy, my own desktops. I didn’t shy away from trying a new component, or a new trick to overclock my CPU to the limit. My passion now is in web and application development as a new career path to put my passion and my career together. I worked as Recruitment Consultant for over eight years. Throughout my career, I supported large international organizations in Canada and abroad. In my free time, you will find me riding my motorcycle, playing soccer or trying a new restaurant in Toronto…. That’s in the summer though. In the winter, I will be doing the same things, but driving.</p>
+            <p>Please feel free to browse around my portfolio. There is nothing in it yet, except for a few pictures I didn't even take. It is a matter of time, though, before the portfolio page becomes busy. Also don't forget to drop me a not to say that you were here. I may not get your message though as the submit button doesn't work yet (no JavaScript). As I said, it is just a matter of time.</p>
+        </section> 
+    
+        <footer>
+            <p id="footText">Copyright© Ahmed Osman</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/JavaScript">
+            $(document).ready(function (){
+                $('.menu').click(function(){
+                    $('ul').toggleClass('active');
+                })
+            })
+        </script>
+    </body>
+</html>

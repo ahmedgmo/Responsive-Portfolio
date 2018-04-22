@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ahmed's Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <h1 class="brand">Ahmed Osman</h1>
+            <div class="toggle">
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html">About</a></li>
+            </ul>                  
+        </nav>
+        
+        <section class="contactForm">
+            <h2 id="contact">Contact</h2>
+            <form action="" method="post">
+    
+                    <!-- Name label and input -->
+                    <label for="fullname">Name</label>
+                    <input type="text" name="Name" id="Name" placeholder="John Smith" required>
+                    
+                    <!-- Email label and input -->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="Email" placeholder="Email" required>
+                    
+                    <!-- Message label and textarea -->
+                    <label for="dmessage">Message</label>
+                    <textarea name="Message" id="Message" cols="30" rows="10" required></textarea>
+                    
+                    <button type="submit" id="sub-btn">Submit</button>
+                </form>
+        </section>>
+        
+        <footer>
+                <p id="footText">Copyright© Ahmed Osman</p>
+            </footer>
+    
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script type="text/JavaScript">
+                $(document).ready(function (){
+                    $('.menu').click(function(){
+                        $('ul').toggleClass('active');
+                    })
+                })
+
+                  $('.toggle').click(function() {
+    $('section').animate({
+      bottom: "0px"
+    }, 200);
+
+    $('body').animate({
+      bottom: "285px"
+    }, 200);
+  });
+            </script>
+        </body>
+    </html>
